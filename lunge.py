@@ -252,7 +252,6 @@ def analyze_lunge_pose(image_path):
 
 
 if __name__ == "__main__":
-
     image_path = "pic2.jpg"
 
     annotated_image, feedback = analyze_lunge_pose(image_path)
@@ -273,4 +272,4 @@ if __name__ == "__main__":
 
     output_path = "lunge_analyzed_pic2.png"
     cv2.imwrite(output_path, annotated_image)
-    print(f"Analyzed image saved to {output_path}")
+    print(f"Analyzed image saved to {output_path}") 

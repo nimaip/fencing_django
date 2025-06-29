@@ -263,23 +263,10 @@ def analyze_engarde_pose(image_path):
     # Left elbow
     draw_angle(annotated_image, shoulder_l, elbow_l, wrist_l, f"{angles['left_elbow']:.1f} deg")
 
-    # Draw feedback
-    # for i, fb in enumerate(feedback):
-    #     cv2.putText(
-    #         annotated_image,
-    #         fb,
-    #         (10, 60 + i * 30),
-    #         cv2.FONT_HERSHEY_SIMPLEX,
-    #         0.55,
-    #         (0, 0, 255),
-    #         2
-    #     )
-
     return annotated_image, feedback
 
 
 if __name__ == "__main__":
-
     image_path = "egpic1.jpg"
 
     # Analyze image
@@ -304,4 +291,4 @@ if __name__ == "__main__":
     # Save output
     output_path = "engarde_analyzed_egpic1.jpg"
     cv2.imwrite(output_path, annotated_image)
-    print(f"Analyzed image saved to {output_path}")
+    print(f"Analyzed image saved to {output_path}") 
